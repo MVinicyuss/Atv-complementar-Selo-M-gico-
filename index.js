@@ -1,32 +1,61 @@
+var min = 1
+var max = 18
+var number = 0
+var count = 0
+
+const respostas =["Certeza!",
+"Não tenho tanta certeza.",
+"É decididamente assim.",
+"Não conte com isso.",
+"Sem dúvidas!",
+"Pergunte novamente mais tarde.",
+"Sim, definitivamente!",
+"Minha resposta é não.",
+"Você pode contar com isso.",
+"Melhor não te dizer agora.",
+"A meu ver, sim.",
+"Minhas fontes dizem não.",
+"Provavelmente.",
+"Não é possível prever agora.",
+"Perspectiva boa.",
+"As perspectivas não são tão boas.",
+"Sim.",
+"Concentre-se e pergunte novamente.",
+"Sinais apontam que sim."]
 
 var el = document.createElement("div");
 var box2 = document.querySelector(".Box2")
 
 function responder(){
-
-  el.classList = "resp"
-
+  
   box2.appendChild(el)
 
-  if(el.childNodes.length == 0){
-  var text = document.createTextNode("Não é possivel responder sua pergunta no momento");
+  var randomIndex = Math.floor(Math.random() * respostas.length)
+  var randomElement = respostas[randomIndex];
+
+  if(el.childNodes.length === 0){
+  var text = document.createTextNode(randomElement);
   el.appendChild(text);
   }
-
+  
+  //Estilizando a div criada (CENTRALIZAR NÃO FUNCIONA)
   el.style.cssText =
   'text-align: center;' + 
   'background-color: rgb(218, 95, 201);';
 
-setTimeout(() => {
-  limpar();
-}, 2500);
- 
+  setTimeout(() => {
+    limpar(el);
+  }, 3000);
 }
 
-function limpar(){
+function limpar(el){
 
-  if (el.parentNode) {
-    el.parentNode.removeChild(el);
-  }
+  el.innerHTML ="";
 
+}
+
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min) + min);
 }
