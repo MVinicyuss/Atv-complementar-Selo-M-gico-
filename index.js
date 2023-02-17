@@ -1,7 +1,5 @@
 var min = 1
 var max = 18
-var number = 0
-var count = 0
 
 const respostas =["Certeza!",
 "Não tenho tanta certeza.",
