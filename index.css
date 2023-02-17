@@ -1,0 +1,61 @@
+*{
+
+    padding: 0%;
+    margin: 0%;
+    font-family: sans-serif;
+    background-color: rgb(218, 95, 201);
+    
+}
+
+.Box1{
+
+    text-decoration-color: white;
+    padding-top: 10%;
+    text-align: center;
+
+}
+
+.imgBoxImg1{
+
+    text-decoration-color: white;
+  
+}
+
+.Box2{
+
+    padding-top: 4%;
+    padding-left: 20%;
+   
+    
+
+}
+
+input{
+    
+    background-color: white;
+    text-decoration-color: black;
+    padding-left: 10px;
+    height: 45px;
+    width: 200px;
+    border-color:rgb(218, 120, 55)
+
+}
+
+button{
+    
+    
+    background-color: purple;
+    height: 45px;
+    width: 215px;
+
+}
+
+.resp{
+
+    background-color: white;
+    text-decoration-color: white;
+    height: 20px;
+    width: 500px;
+    text-align: center;
+
+}
