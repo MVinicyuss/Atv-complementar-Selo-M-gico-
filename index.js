@@ -1,6 +1,3 @@
-var min = 1
-var max = 18
-
 const respostas =["Certeza!",
 "Não tenho tanta certeza.",
 "É decididamente assim.",
@@ -50,10 +47,4 @@ function limpar(el){
 
   el.innerHTML ="";
 
-}
-
-function getRandomInt(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min) + min);
 }
