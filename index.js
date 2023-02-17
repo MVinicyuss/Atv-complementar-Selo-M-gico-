@@ -39,11 +39,11 @@ function responder(){
   'background-color: rgb(218, 95, 201);';
 
   setTimeout(() => {
-    limpar(el);
+    limpar();
   }, 3000);
 }
 
-function limpar(el){
+function limpar(){
 
   el.innerHTML ="";
 
